@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="128dp"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="10dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_weight="1"
+            android:id="@+id/ivMonAn"
+            android:layout_width="128dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/image_login" />
+
+        <LinearLayout
+            android:layout_weight="5"
+            android:id="@+id/linearItemMonAn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/tvTenMonAn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ten mon an"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/tvGiaMonAn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="80.000" />
+
+            <TextView
+                android:id="@+id/tvThoiGianNau"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tvTenMonAn"
+                android:text="80.000" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/btnAddMonAn"
+            android:layout_weight="0.5"
+            android:layout_gravity="center"
+            android:src="@drawable/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/linearItemMonAn" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
